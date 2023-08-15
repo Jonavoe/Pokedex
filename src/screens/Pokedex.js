@@ -34,7 +34,7 @@ export default function Pokedex() {
         });
       }
 
-      setPokemons([...pokemons, ...pokemonArray]);
+      setPokemons((prevPokemons) => [...prevPokemons, ...pokemonArray]);
     } catch (error) {
       console.error(error);
     }
