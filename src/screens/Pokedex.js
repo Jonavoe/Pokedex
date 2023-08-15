@@ -24,11 +24,14 @@ export default function Pokedex() {
         pokemonArray.push({
           id: pokemonDetails.id,
           name: pokemonDetails.name,
-          type: pokemonDetails.type[0].type.name,
+          type: pokemonDetails.types[0].type.name,
+          order: pokemonDetails.order,
+          imagen:
+            pokemonDetails.sprites.other["official-artwork"].front_default,
         });
       }
 
-      setPokemons(pokemonArray);
+      setPokemons([...pokemons, ...pokemonArray]);
     } catch (error) {
       console.error(error);
     }
