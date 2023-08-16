@@ -111,8 +111,6 @@ export default function Pokedex() {
 const styles = StyleSheet.create({
   mainContainer: {
     flex: 1,
-    borderWidth: 2,
-    borderColor: "black",
   },
   pokemonContainer: {
     flexDirection: "row",
@@ -124,8 +122,6 @@ const styles = StyleSheet.create({
     height: 180,
     margin: 4,
     borderRadius: 20,
-    borderWidth: 2,
-    borderColor: "orange",
     alignItems: "center",
     justifyContent: "center",
   },
