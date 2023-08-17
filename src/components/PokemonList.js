@@ -1,9 +1,6 @@
-import { View, Text } from "react-native";
 import React from "react";
-import { FlatList } from "react-native-gesture-handler";
-import { StyleSheet } from "react-native";
+import { StyleSheet, Text, FlatList } from "react-native";
 import PokemonCard from "./PokemonCard";
-
 export default function PokemonList(props) {
   const { pokemons } = props;
   return (
@@ -17,9 +14,6 @@ export default function PokemonList(props) {
     />
   );
 }
-
 const styles = StyleSheet.create({
-  flatListContentContainer: {
-    paddingHorizontal: 5,
-  },
+  flatListContentContainer: { paddingHorizontal: 5 },
 });
