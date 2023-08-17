@@ -1,8 +1,10 @@
 import React from "react";
 import { StyleSheet, Text, FlatList } from "react-native";
 import PokemonCard from "./PokemonCard";
+
 export default function PokemonList(props) {
   const { pokemons } = props;
+
   return (
     <FlatList
       data={pokemons}
@@ -14,6 +16,9 @@ export default function PokemonList(props) {
     />
   );
 }
+
 const styles = StyleSheet.create({
-  flatListContentContainer: { paddingHorizontal: 5 },
+  flatListContentContainer: {
+    paddingHorizontal: 5,
+  },
 });
