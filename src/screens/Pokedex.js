@@ -27,7 +27,7 @@ export default function Pokedex() {
           order: pokemonDetails.order,
           image:
             pokemonDetails.sprites.other["official-artwork"].front_default,
-            // pokemonDetails.sprites.other["official-artwork"].front_default,
+            // pokemonDetails.sprites.other["home"].front_default,
         });
       }
 
@@ -39,7 +39,7 @@ export default function Pokedex() {
 
   return (
     <SafeAreaView>
-      <PokemonList pokemons={pokemons}/>
+      <PokemonList pokemons={pokemons} loadPokemons={loadPokemons}/>
     </SafeAreaView>
   );
 }
