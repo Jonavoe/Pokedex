@@ -9,8 +9,6 @@ export default function PokemonList(props) {
     loadPokemons();
   };
 
-  console.log(pokemons);
-
   return (
     <FlatList
       data={pokemons}
