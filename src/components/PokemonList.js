@@ -1,4 +1,4 @@
-import { ActivityIndicator, FlatList, StyleSheet } from "react-native";
+import { View, ActivityIndicator, FlatList, StyleSheet } from "react-native";
 import React from "react";
 import PokemonCard from "./PokemonCard";
 
