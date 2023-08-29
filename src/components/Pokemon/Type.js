@@ -25,17 +25,15 @@ export default function Type(props) {
 
 const styles = StyleSheet.create({
   content: {
-    marginTop: 30,
+    marginTop: 50,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
-    // paddingHorizontal: 20,
   },
   pill: {
     paddingHorizontal: 30,
     paddingVertical: 5,
     borderRadius: 20,
     marginHorizontal: 10,
-    backgroundColor: "type",
   },
 });

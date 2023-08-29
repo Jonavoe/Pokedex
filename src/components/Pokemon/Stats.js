@@ -1,6 +1,6 @@
-import { StyleSheet, View, Text } from "react-native";
 import React from "react";
-import { capitalize, map } from "lodash";
+import { StyleSheet, View, Text } from "react-native";
+import { map, capitalize } from "lodash";
 
 export default function Stats(props) {
   const { stats } = props;
@@ -12,6 +12,7 @@ export default function Stats(props) {
       width: `${num}%`,
     };
   };
+
   return (
     <View style={styles.content}>
       <Text style={styles.title}>Base Stats</Text>
@@ -23,7 +24,7 @@ export default function Stats(props) {
           <View style={styles.blockInfo}>
             <Text style={styles.number}>{item.base_stat}</Text>
             <View style={styles.bgBar}>
-              <View style={[styles.Bar, barStyles(item.base_stat)]}></View>
+              <View style={[styles.bar, barStyles(item.base_stat)]} />
             </View>
           </View>
         </View>
@@ -35,7 +36,7 @@ export default function Stats(props) {
 const styles = StyleSheet.create({
   content: {
     paddingHorizontal: 20,
-    marginTop: 20,
+    marginTop: 40,
     marginBottom: 80,
   },
   title: {
@@ -52,7 +53,7 @@ const styles = StyleSheet.create({
   },
   statName: {
     fontSize: 12,
-    color: "#6b6bb6",
+    color: "#6b6b6b",
   },
   blockInfo: {
     width: "70%",
@@ -70,9 +71,9 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     overflow: "hidden",
   },
-  Bar: {
-    // backgroundColor: "#f00",
-    // width: "100%",
+  bar: {
+    // backgroundColor: "red",
+    // width: "40%",
     height: 5,
     borderRadius: 20,
   },
