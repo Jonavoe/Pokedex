@@ -16,7 +16,6 @@ export default function LoginForm() {
   const [error, setError] = useState("");
   const { login } = useAuth();
 
-
   const formik = useFormik({
     initialValues: initialValues(),
     validationSchema: Yup.object(validationSchema()),
@@ -27,10 +26,8 @@ export default function LoginForm() {
 
       if (username !== user.username || password !== user.password) {
         setError("El usuario o la contraseña no son correcto");
-
       } else {
         login(userDetails);
-
       }
     },
   });
@@ -55,6 +52,8 @@ export default function LoginForm() {
       />
       <Button title="Entrar" onPress={formik.handleSubmit} />
 
+      <Text>username: poke</Text>
+      <Text>password: poke</Text>
       <Text style={styles.error}>{formik.errors.username}</Text>
       <Text style={styles.error}>{formik.errors.password}</Text>
 

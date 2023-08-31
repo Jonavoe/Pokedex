@@ -52,7 +52,7 @@ export default function Favorite(props) {
       color="#fff"
       size={20}
       onPress={isFavorite ? removeFavorite : addFavorite}
-      style={{ marginRight: 20 }}
+      style={{ marginRight: 20, marginBottom: 20 }}
     />
   );
 }

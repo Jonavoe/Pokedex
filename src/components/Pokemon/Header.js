@@ -49,10 +49,12 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontWeight: "bold",
     fontSize: 27,
+    marginTop: 20,
   },
   order: {
     color: "#fff",
     fontWeight: "bold",
+    marginTop: 20,
   },
   contentImg: {
     flex: 1,
